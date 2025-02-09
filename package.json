@@ -1,0 +1,30 @@
+{
+  "name": "webrtc-chat-app",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "node server/index.js",
+    "dev:all": "concurrently \"npm run dev\" \"npm run server\""
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "express": "^4.18.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
+    "simple-peer": "^9.11.1",
+    "socket.io": "^4.7.4",
+    "socket.io-client": "^4.7.4",
+    "vite": "^5.1.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "concurrently": "^8.2.2",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1"
+  }
+}
