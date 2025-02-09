@@ -4,7 +4,7 @@ export default function handler(req, res) {
   if (!res.socket.server.io) {
     const io = new Server(res.socket.server, {
       cors: {
-        origin: "https://your-vercel-app.vercel.app",
+        origin: "*",
         methods: ["GET", "POST"]
       }
     });

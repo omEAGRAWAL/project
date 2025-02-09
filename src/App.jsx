@@ -3,8 +3,13 @@ import { io } from 'socket.io-client';
 import Peer from 'simple-peer';
 import { BsCameraVideo, BsCameraVideoOff, BsMic, BsMicMute } from 'react-icons/bs';
 
-const socket = io('https://project-git-main-omeagrawals-projects.vercel.app');
-
+// const socket = io(' ');
+// const socket = io("https://webrtc_app.vercel.app", {
+//   path: "/api/socket.io",
+// });
+const socket = io({
+  path: "/api/socket.io",
+});
 function App() {
   const [username, setUsername] = useState('');
   const [joined, setJoined] = useState(false);
