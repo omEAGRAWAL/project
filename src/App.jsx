@@ -3,7 +3,7 @@ import { io } from 'socket.io-client';
 import Peer from 'simple-peer';
 import { BsCameraVideo, BsCameraVideoOff, BsMic, BsMicMute } from 'react-icons/bs';
 
-const socket = io('http://localhost:3000');
+const socket = io('https://project-git-main-omeagrawals-projects.vercel.app');
 
 function App() {
   const [username, setUsername] = useState('');
